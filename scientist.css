@@ -405,6 +405,7 @@ figcaption p {
 
 .article-card {
     display: flex;
+    container: initial;
     flex-direction: column;
     gap: 15px;
     text-decoration: none;
@@ -446,15 +447,21 @@ figcaption p {
     max-width: 1200px;
     margin: 0 auto 40px;
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+
+.grider {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
     gap: 40px;
 }
 
 .footer-column h4 {
     font-size: 14px;
     font-weight: 700;
-    margin: 0 0 20px 0;
+    margin:  20px ;
+    margin-top: 78px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -470,14 +477,16 @@ figcaption p {
 }
 
 .footer-column a {
-    color: #ccc;
+    color: #f4e9e9;
     text-decoration: none;
     font-size: 13px;
+    display: block;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     transition: color 0.2s;
 }
 
 .footer-column a:hover {
-    color: #fff;
+    color: #1e88e5;
 }
 
 .footer-bottom {
@@ -596,6 +605,20 @@ figcaption p {
         gap: 30px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
