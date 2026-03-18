@@ -1,14 +1,12 @@
 /* -------------------- BODY & FONTS -------------------- */
 body {
-font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-line-height: 1.6;
-color: #1a1a1a;
-margin: 0;
-padding: 0;
-background-color: #fff;
-
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
 }
-
 
 /* -------------------- HEADER -------------------- */
 header {
@@ -16,7 +14,6 @@ header {
   position: relative;
   top: auto;
 }
-
 
 .top-bar {
   display: flex;
@@ -26,23 +23,20 @@ header {
   background-color: #fff;
 }
 
-
 .Website-name {
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   font-size: 60px;
   font-weight: 900;
   color: #000;
-  margin:0;
-  letter-spacing:-0.5px;
+  margin: 0;
+  letter-spacing: -0.5px;
 }
-
 
 .header-right {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
 
 .account-btn {
   background-color: #fff;
@@ -56,12 +50,10 @@ header {
   transition: all 0.3s ease;
 }
 
-
 .account-btn:hover {
   background-color: #f0f0f0;
   box-shadow: #21a021 10px 10px 10px;
 }
-
 
 .search-box {
   display: flex;
@@ -72,7 +64,6 @@ header {
   min-width: 300px;
 }
 
-
 .search-box input {
   border: none;
   outline: none;
@@ -80,7 +71,6 @@ header {
   font-size: 14px;
   color: #666;
 }
-
 
 .search-box input::placeholder {
   color: #999;
