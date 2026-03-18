@@ -115,6 +115,20 @@ header {
   padding: 0;
 }
 
+
+.category-nav a {
+  text-decoration: none;
+  color: #666;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.category-nav a:hover,
+.category-nav a.active {
+  color: #1e88e5;
+  font-weight: 600;
+}
+
 .main-nav a {
   text-decoration: none;
   color: #1a1a1a;
@@ -162,18 +176,6 @@ header {
   flex-wrap: wrap;
 }
 
-.category-nav a {
-  text-decoration: none;
-  color: #666;
-  font-size: 13px;
-  transition: color 0.2s;
-}
-
-.category-nav a:hover,
-.category-nav a.active {
-  color: #1e88e5;
-  font-weight: 600;
-}
 
 /* -------------------- ARTICLE HEADER -------------------- */
 .article-header {
