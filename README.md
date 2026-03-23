@@ -3,6 +3,7 @@
  <a [NewScientist Article] </a>
 
 
+![App Screenshot](Screenshot.png)
 
 ![screenshot] (Screenshot.png)
 
