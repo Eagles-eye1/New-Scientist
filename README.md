@@ -4,7 +4,7 @@
 
 
 
-![screenshot] ("C:\Users\Powell\Videos\Captures\Ancient lake Screenshot.png")
+![screenshot] (Screenshot.png)
 
 ## Built with 
 
