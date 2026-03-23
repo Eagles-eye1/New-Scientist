@@ -5,7 +5,6 @@
 
 ![App Screenshot](Screenshot.png)
 
-![screenshot] (Screenshot.png)
 
 ## Built with 
 
