@@ -1,19 +1,32 @@
 # NewScientist article page clone
 
- <a [NewScientist Article] </a>
+ 
+A HTML/CSS landing page from [NewScientist Article](https://www.newscientist.com/article/2286218-ancient-lake-in-marss-gale-crater-may-have-actually-been-a-small-pond/)
 
 
 
-![screenshot] (Screenshot.png)
+![App Screenshot](Screenshot.png)
+
+
+## Live Demo 
+[Live Demo link](https://eagles-eye1.github.io/New-Scientist/scientist.html)
+
+
+
+## Project Files
+- index.html — main page content
+- style.css - style page content
+- Assets — icons and images
 
 ## Built with 
 
-HTML<br>CSS
+- HTML
+- CSS
 
 ## Authors
 
  👤  **Author**
-
+    Powell Orok
  - Github: [Eagleseye1] [https://github.com/Eagles-eye1]
 
 
