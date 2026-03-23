@@ -1,6 +1,6 @@
 # NewScientist article page clone
 
- <a [NewScientist Article] ([https://www.newscientist.com/article/2286218-ancient-lake-in-marss-gale-crater-may-have-actually-been-a-small-pond/])></a>
+ <a [NewScientist Article] </a>
 
 
 
