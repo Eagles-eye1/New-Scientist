@@ -6,7 +6,6 @@ A HTML/CSS landing page from [NewScientist Article](https://www.newscientist.com
 
 ![App Screenshot](Screenshot.png)
 
-![screenshot] (Screenshot.png)
 
 ## Built with 
 
@@ -29,6 +28,5 @@ Feel free to check the [issues page](https://github.com/Eagles-eye1/issues).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
 
 
