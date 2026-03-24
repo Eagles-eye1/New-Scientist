@@ -314,11 +314,12 @@ header {
 
 /* -------------------- SIDEBAR -------------------- */
 
-.topics-section h4 {
+.topics-section {
+  display: none;
 }
 
 .topic-tags {
-  display: flex;
+  display: flex; 
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -336,6 +337,10 @@ header {
 
 .topic-tag:hover {
   background-color: #e0e0e0;
+}
+
+.related-articles {
+  display: none;
 }
 
 .related-articles h4 {
@@ -511,84 +516,6 @@ figcaption p {
   color: #fff;
 }
 
-/* -------------------- RESPONSIVE -------------------- */
-@media (max-width: 1024px) {
-  .article-container {
-    gap: 30px;
-    padding: 30px;
-  }
-
-  .sidebar {
-    width: 280px;
-  }
-
-  .articles-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .top-bar {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px 20px;
-  }
-
-  .header-right {
-    width: 100%;
-    gap: 10px;
-  }
-
-  .search-box {
-    min-width: auto;
-    flex: 1;
-  }
-
-  .main-nav {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px 20px;
-  }
-
-  .main-nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .article-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .sidebar {
-    width: 100%;
-  }
-
-  .article-title {
-    font-size: 32px;
-  }
-
-  .featured-image {
-    height: 250px;
-  }
-
-  .article-header {
-    padding: 30px 20px;
-  }
-
-  .articles-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .more-articles {
-    padding: 0 20px;
-  }
-
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-}
 
 /* -------------------- MAIN NAV -------------------- */
 .main-nav ul {
@@ -597,14 +524,6 @@ figcaption p {
   list-style: none;
   padding: 10px 30px;
   margin: 0;
-}
-
-.main-nav a {
-  position: relative; /* needed for ::after underline */
-  text-decoration: none;
-  color: #111;
-  font-size: 14px;
-  padding-bottom: 5px; /* space for underline */
 }
 
 /* -------------------- CATEGORY NAV -------------------- */
@@ -642,6 +561,17 @@ figcaption p {
 }
 
 .main-nav a:hover::after,
+
+
+
+.main-nav a {
+  position: relative; /* needed for ::after underline */
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+  padding-bottom: 5px; /* space for underline */
+}
+
 .category-nav a:hover::after {
   transform: scaleX(1);
 }
