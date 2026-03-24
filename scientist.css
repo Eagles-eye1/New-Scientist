@@ -317,9 +317,9 @@ figcaption p {
 }
 
 .citation {
-  font-size: 13px !important;
-  color: #666 !important;
-  margin-top: 30px !important;
+  font-size: 13px;
+  color: #666 ;
+  margin-top: 30px;
   padding-top: 20px;
   border-top: 1px solid #e0e0e0;
 }
