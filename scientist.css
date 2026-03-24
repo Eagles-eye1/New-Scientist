@@ -124,10 +124,6 @@ header {
   transition: color 0.2s;
 }
 
-.main-nav a:hover {
-  color: #2ab82a;
-}
-
 .main-nav .magazine-link {
   color: #d32f2f;
   font-weight: 700;
@@ -155,12 +151,6 @@ header {
   font-size: 14px;
   padding-bottom: 5px;
   transition: color 0.2s;
-}
-
-.category-nav a:hover,
-.category-nav a.active {
-  color: #1e88e5;
-  font-weight: 600;
 }
 
 /* -------------------- HOVER UNDERLINE -------------------- */
@@ -229,11 +219,6 @@ header {
   color: #1e88e5;
   text-decoration: none;
   font-weight: 500;
-}
-
-.byline a:hover,
-.date a:hover {
-  text-decoration: underline;
 }
 
 /* -------------------- SOCIAL -------------------- */
@@ -312,10 +297,6 @@ figcaption p {
   text-decoration: none;
 }
 
-.article-content a:hover {
-  text-decoration: underline;
-}
-
 .citation {
   font-size: 13px;
   color: #666 ;
@@ -354,10 +335,6 @@ figcaption p {
 .article-card a {
   color: #000;
   text-decoration: none;
-}
-
-.article-card a:hover {
-  color: #1e88e5;
 }
 
 /* -------------------- FOOTER -------------------- */
@@ -400,10 +377,6 @@ figcaption p {
   display: block;
 }
 
-.footer-column a:hover {
-  color: #1e88e5;
-}
-
 .footer-bottom {
   max-width: 1200px;
   margin: 0 auto;
@@ -421,6 +394,27 @@ figcaption p {
   font-size: 19px;
 }
 
+/* -------------------- LINK HOVER STATES -------------------- */
+.main-nav a:hover {
+  color: #2ab82a;
+}
+
+.category-nav a:hover,
+.category-nav a.active {
+  color: #1e88e5;
+  font-weight: 600;
+}
+
+.byline a:hover,
+.date a:hover,
+.article-content a:hover,
+.article-card a:hover,
+.footer-column a:hover {
+  color: #1e88e5;
+  text-decoration: underline;
+}
+
 .footer-bottom a:hover {
   color: #fff;
+  text-decoration: none;
 }
