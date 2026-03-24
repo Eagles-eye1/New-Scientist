@@ -115,7 +115,6 @@ header {
   padding: 0;
 }
 
-
 .category-nav a {
   text-decoration: none;
   color: #666;
@@ -218,12 +217,7 @@ header {
   color: #666;
 }
 
-.byline a,
-.date a {
-  color: #1e88e5;
-  text-decoration: none;
-  font-weight: 500;
-}
+
 
 .byline a:hover,
 .date a:hover {
@@ -560,10 +554,15 @@ figcaption p {
   transition: transform 0.3s ease;
 }
 
+
+.byline a,
+.date a {
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 .main-nav a:hover::after,
-
-
-
 .main-nav a {
   position: relative; /* needed for ::after underline */
   text-decoration: none;
