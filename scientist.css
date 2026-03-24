@@ -12,7 +12,6 @@ body {
 header {
   border-bottom: 1px solid #e0e0e0;
   position: relative;
-  top: auto;
 }
 
 .top-bar {
@@ -99,7 +98,7 @@ header {
   justify-content: center;
 }
 
-/* -------------------- MAIN NAVIGATION -------------------- */
+/* -------------------- MAIN NAV -------------------- */
 .main-nav {
   display: flex;
   align-items: center;
@@ -109,30 +108,19 @@ header {
 
 .main-nav ul {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   list-style: none;
+  padding: 10px 30px;
   margin: 0;
-  padding: 0;
-}
-
-.category-nav a {
-  text-decoration: none;
-  color: #666;
-  font-size: 13px;
-  transition: color 0.2s;
-}
-
-.category-nav a:hover,
-.category-nav a.active {
-  color: #1e88e5;
-  font-weight: 600;
 }
 
 .main-nav a {
+  position: relative;
   text-decoration: none;
   color: #1a1a1a;
   font-size: 14px;
   font-weight: 500;
+  padding-bottom: 5px;
   transition: color 0.2s;
 }
 
@@ -145,23 +133,7 @@ header {
   font-weight: 700;
 }
 
-.subscribe-btn {
-  background-color: #f9b233;
-  border: none;
-  color: #000;
-  padding: 12px 24px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 14px;
-  transition: background-color 0.3s;
-}
-
-.subscribe-btn:hover {
-  background-color: #0ccefa;
-}
-
-/* -------------------- CATEGORY NAVIGATION -------------------- */
+/* -------------------- CATEGORY NAV -------------------- */
 .category-nav {
   padding: 12px 40px;
 }
@@ -170,11 +142,46 @@ header {
   display: flex;
   gap: 20px;
   list-style: none;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd;
   margin: 0;
-  padding: 0;
   flex-wrap: wrap;
 }
 
+.category-nav a {
+  position: relative;
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  padding-bottom: 5px;
+  transition: color 0.2s;
+}
+
+.category-nav a:hover,
+.category-nav a.active {
+  color: #1e88e5;
+  font-weight: 600;
+}
+
+/* -------------------- HOVER UNDERLINE -------------------- */
+.main-nav a::after,
+.category-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.main-nav a:hover::after,
+.category-nav a:hover::after {
+  transform: scaleX(1);
+}
 
 /* -------------------- ARTICLE HEADER -------------------- */
 .article-header {
@@ -201,7 +208,7 @@ header {
   font-weight: 900;
   line-height: 1.1;
   color: #000;
-  margin: 15px 0 25px 0;
+  margin: 15px 0 25px;
 }
 
 .article-meta {
@@ -217,14 +224,19 @@ header {
   color: #666;
 }
 
-
+.byline a,
+.date a {
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: 500;
+}
 
 .byline a:hover,
 .date a:hover {
   text-decoration: underline;
 }
 
-/* -------------------- SOCIAL SHARING -------------------- */
+/* -------------------- SOCIAL -------------------- */
 .social-sharing {
   display: flex;
   gap: 15px;
@@ -254,7 +266,7 @@ header {
   background-color: #f5f5f5;
 }
 
-/* -------------------- FEATURED IMAGE -------------------- */
+/* -------------------- IMAGE -------------------- */
 .featured-image {
   width: 100%;
   height: 400px;
@@ -269,7 +281,18 @@ header {
   display: block;
 }
 
-/* -------------------- ARTICLE CONTAINER -------------------- */
+figcaption {
+  font-size: 13px;
+  color: #666;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+figcaption p {
+  margin: 5px 0;
+}
+
+/* -------------------- ARTICLE CONTENT -------------------- */
 .article-container {
   gap: 50px;
   max-width: 1200px;
@@ -277,16 +300,11 @@ header {
   padding: 40px;
 }
 
-.article-content {
-  flex: 1;
-  min-width: 0;
-}
-
 .article-content p {
   font-size: 16px;
   line-height: 1.8;
   color: #333;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
 
 .article-content a {
@@ -306,96 +324,7 @@ header {
   border-top: 1px solid #e0e0e0;
 }
 
-/* -------------------- SIDEBAR -------------------- */
-
-.topics-section {
-  display: none;
-}
-
-.topic-tags {
-  display: flex; 
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.topic-tag {
-  display: inline-block;
-  background-color: #f0f0f0;
-  color: #1e88e5;
-  padding: 6px 12px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: 13px;
-  transition: background-color 0.2s;
-}
-
-.topic-tag:hover {
-  background-color: #e0e0e0;
-}
-
-.related-articles {
-  display: none;
-}
-
-.related-articles h4 {
-  font-size: 14px;
-  color: #000;
-  margin: 0 0 15px 0;
-}
-
-.related-articles ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.related-articles li {
-  margin-bottom: 15px;
-}
-
-.related-articles a {
-  color: #1e88e5;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.5;
-  display: block;
-}
-
-.related-articles a:hover {
-  text-decoration: underline;
-}
-
-/* -------------------- FEATURED IMAGE CAPTION -------------------- */
-figcaption {
-  font-size: 13px;
-  color: #666;
-  padding: 10px 0;
-  line-height: 1.5;
-}
-
-figcaption p {
-  margin: 5px 0;
-}
-
-/* -------------------- MORE ARTICLES SECTION -------------------- */
-.more-articles {
-  max-width: 1200px;
-  margin: 60px auto 40px;
-  padding: 0 40px;
-}
-
-.more-articles h3 {
-  font-size: 28px;
-  font-weight: 700;
-  margin: 0 0 10px 0;
-}
-
-.more-articles > p {
-  font-size: 14px;
-  color: #666;
-  margin: 0 0 30px 0;
-}
-
+/* -------------------- GRID -------------------- */
 .articles-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -404,7 +333,6 @@ figcaption p {
 
 .article-card {
   display: flex;
-  container: initial;
   flex-direction: column;
   gap: 15px;
   text-decoration: none;
@@ -415,7 +343,6 @@ figcaption p {
   height: 180px;
   object-fit: cover;
   border-radius: 4px;
-  display: block;
 }
 
 .article-card h4 {
@@ -427,7 +354,6 @@ figcaption p {
 .article-card a {
   color: #000;
   text-decoration: none;
-  transition: color 0.2s;
 }
 
 .article-card a:hover {
@@ -450,19 +376,11 @@ figcaption p {
   gap: 40px;
 }
 
-.grider {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-}
-
 .footer-column h4 {
   font-size: 14px;
   font-weight: 700;
-  margin: 20px;
-  margin-top: 78px;
+  margin: 78px 20px 20px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 .footer-column ul {
@@ -480,8 +398,6 @@ figcaption p {
   text-decoration: none;
   font-size: 13px;
   display: block;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  transition: color 0.2s;
 }
 
 .footer-column a:hover {
@@ -493,7 +409,6 @@ figcaption p {
   margin: 0 auto;
   border-top: 1px solid #333;
   padding-top: 40px;
-  text-align: left;
   font-size: 13px;
   color: #ccc;
   display: flex;
@@ -502,75 +417,10 @@ figcaption p {
 
 .footer-bottom a {
   color: #ccc;
-  text-decoration: dashed;
+  text-decoration: none;
   font-size: 19px;
 }
 
 .footer-bottom a:hover {
   color: #fff;
-}
-
-
-/* -------------------- MAIN NAV -------------------- */
-.main-nav ul {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-  padding: 10px 30px;
-  margin: 0;
-}
-
-/* -------------------- CATEGORY NAV -------------------- */
-.category-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  padding: 10px 30px;
-  border-bottom: 1px solid #ddd;
-  margin: 0;
-}
-
-.category-nav a {
-  position: relative;
-  text-decoration: none;
-  color: #666;
-  font-size: 14px;
-  padding-bottom: 5px;
-}
-
-/* -------------------- HOVER UNDERLINE ANIMATION -------------------- */
-.main-nav a::after,
-.category-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: currentColor; /* inherits link color */
-
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s ease;
-}
-
-
-.byline a,
-.date a {
-  color: #1e88e5;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.main-nav a:hover::after,
-.main-nav a {
-  position: relative; /* needed for ::after underline */
-  text-decoration: none;
-  color: #111;
-  font-size: 14px;
-  padding-bottom: 5px; /* space for underline */
-}
-
-.category-nav a:hover::after {
-  transform: scaleX(1);
 }
