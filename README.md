@@ -12,6 +12,13 @@ A HTML/CSS landing page from [NewScientist Article](https://www.newscientist.com
 - HTML
 - CSS
 
+## Live Demo
+
+[Link to site](https://eagles-eye1.github.io/New-Scientist/scientist.html)
+
+
+
+
 ## Authors
 
  👤  **Author**
