@@ -51,7 +51,8 @@ header {
 
 .account-btn:hover {
   background-color: #f0f0f0;
-  box-shadow: #21a021 10px 10px 10px;
+  box-shadow: #21a021 10px ;
+  transform:translateX(5px)
 }
 
 .search-box {
@@ -88,9 +89,9 @@ header {
   background: none;
   border: 2px solid #2ab82a;
   color: #2ab82a;
-  width: 40px;
+  width: 100px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 50px;
   cursor: pointer;
   font-size: 18px;
   display: flex;
@@ -593,7 +594,7 @@ figcaption p {
   background: currentColor;
   transform: scaleX(0);
   transform-origin: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .footer-column a::after {
