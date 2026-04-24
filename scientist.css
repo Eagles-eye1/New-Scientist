@@ -51,8 +51,8 @@ header {
 
 .account-btn:hover {
   background-color: #f0f0f0;
-  box-shadow: #21a021 10px ;
-  transform:translateX(5px)
+  box-shadow: #21a021 10px;
+  transform: translateX(5px);
 }
 
 .search-box {
