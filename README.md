@@ -6,6 +6,8 @@ A HTML/CSS landing page from [NewScientist Article](https://www.newscientist.com
 
 ![App Screenshot](Screenshot.png)
 
+![App Screenshot](Forms.png)
+
 
 ## Built with 
 
@@ -15,7 +17,7 @@ A HTML/CSS landing page from [NewScientist Article](https://www.newscientist.com
 ## Live Demo
 
 [Link to site](https://eagles-eye1.github.io/New-Scientist/scientist.html)
-
+[Link to site](https://eagles-eye1.github.io/New-Scientist/forms.html)
 
 
 
